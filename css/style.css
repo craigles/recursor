@@ -8,6 +8,7 @@ body {
 
 h1 {
     font-size: 80px;
+    animation: slide-left;
 }
 
 h1:hover {
@@ -39,9 +40,15 @@ footer {
     font-style: normal;
 }
 
-
 @keyframes blinker {
     50% {
       opacity: 0;
     }
   }
+
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+}
